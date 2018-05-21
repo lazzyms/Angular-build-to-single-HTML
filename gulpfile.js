@@ -7,7 +7,8 @@ gulp.task('inlinesource', function () {
   return gulp.src('./dist/main.html')
     .pipe(inlinesource())
     .pipe(rename('index.html'))
-    .pipe(gulp.dest('../desktop/MCare/Html/'));
+  //Destination for the resulting index.html
+    .pipe(gulp.dest('../project/static/'));
 });
 
 gulp.task('replace', function () {
